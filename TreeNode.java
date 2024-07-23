@@ -15,8 +15,6 @@ public class MovieBST {
     public MovieBST() {
         root = null;
     }
-
-    // Insert movie into BST
     public void insert(Movie movie) {
         root = insertRec(root, movie);
     }
@@ -34,8 +32,6 @@ public class MovieBST {
         }
         return root;
     }
-
-    // Delete movie from BST
     public void delete(String title) {
         root = deleteRec(root, title);
     }
@@ -69,8 +65,6 @@ public class MovieBST {
         }
         return minValue;
     }
-
-    // Search movie by title
     public Movie search(String title) {
         return searchRec(root, title);
     }
@@ -88,8 +82,6 @@ public class MovieBST {
             return root.movie;
         }
     }
-
-    // List all movies
     public void listAll() {
         listAllRec(root);
     }
